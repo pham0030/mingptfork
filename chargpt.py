@@ -96,11 +96,11 @@ if __name__ == '__main__':
 
     # construct the training dataset
     
-    subprocess.run(["wget", "https://mattmahoney.net/dc/enwik8.zip"])
-    shutil.unpack_archive("enwik8.zip")
+    subprocess.run(["wget", "https://mattmahoney.net/dc/enwik9.zip"])
+    shutil.unpack_archive("enwik9.zip")
     # with open('input.txt', 'r', encoding='utf-8') as f:
     #     text = f.read()
-    text = open('enwik8', 'r').read() # don't worry we won't run out of file handles
+    text = open('enwik9', 'r').read() # don't worry we won't run out of file handles
     train_dataset = CharDataset(config.data, text)
 
     # construct the model
